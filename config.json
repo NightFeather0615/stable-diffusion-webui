@@ -40,7 +40,7 @@
   "face_restoration_model": null,
   "code_former_weight": 0.5,
   "face_restoration_unload": false,
-  "memmon_poll_rate": 0,
+  "memmon_poll_rate": 8,
   "samples_log_stdout": false,
   "multiple_tqdm": true,
   "sd_model_checkpoint": "",
