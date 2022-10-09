@@ -21,7 +21,7 @@
   "outdir_grids": "",
   "outdir_txt2img_grids": "outputs\\txt2img-grids",
   "outdir_img2img_grids": "outputs\\img2img-grids",
-  "outdir_save": "log/images",
+  "outdir_save": "log\\images",
   "save_to_dirs": false,
   "grid_save_to_dirs": false,
   "use_save_to_dirs_for_ui": false,
