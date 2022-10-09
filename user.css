@@ -1,0 +1,331 @@
+/* Custom CSS to match NovelAI's UI */
+
+body {
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: #13152c !important;
+  --loader-color: #F5F3C2;
+}
+
+.gradio-container {
+  background-color: #13152c !important;
+}
+
+.modalControls.gradio-container {
+  background-color: rgb(25, 27, 49) !important;
+}
+
+div .mx-auto.container.px-4.py-6.dark\:bg-gray-950.flex-grow {
+  background-color: #13152c !important;
+}
+
+div .tabitem.p-2.border-2.border-t-0.border-gray-200.relative.flex {
+  border-radius: 3px !important;
+}
+
+div button .flex.border-b-2.flex-wrap.dark\:border-gray-700 {
+  border-radius: 3px !important;
+}
+
+div .overflow-hidden.flex.flex-col.gr-gap.gr-form-gap.relative.col.gap-4.bg-gray-50.p-2.rounded-lg {
+  border-radius: 3px !important;
+  background-color: #13152c !important;
+}
+
+div div .gr-block.gr-box.relative.w-full.overflow-hidden.border-solid.border.border-gray-200.gr-panel {
+  border-radius: 0px !important;
+  background-color: #13152c !important;
+}
+
+div div .gr-block.gr-box.relative.w-full.overflow-hidden.border-solid.border.border-gray-200.gr-panel {
+  background-color: #13152c !important;
+  border: none !important;
+}
+
+.dark .border,
+.dark .border-gray-100,
+.dark .border-gray-200,
+.dark .\!border-gray-300 {
+  border: none !important;
+  border-radius: 0px !important;
+  background: none !important;
+}
+
+input[type="range"] {
+  background-color: rgb(19, 21, 44);
+  height: 26px;
+  padding: 0px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  background-color: rgb(34, 37, 63);
+  border-radius: 99px;
+  border: 1.5px solid rgb(153, 153, 153);
+  height: 22px;
+  width: 10px;
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+  background-color: rgb(245, 243, 194);
+  border-radius: 99px;
+  border: 1.5px solid rgb(153, 153, 153);
+  height: 22px;
+  width: 10px;
+}
+
+input[type="range"]::-moz-range-progress {
+  background-color: rgb(14, 15, 33);
+  height: 26px;
+}
+
+input[type="range"]::-moz-range-track {
+  background-color: rgb(14, 15, 33);
+  height: 26px;
+}
+
+.dark .dark\:border-gray-700 {
+  border: none !important;
+  background: none !important;
+  padding-bottom: 10px;
+}
+
+.dark .gr-input {
+  border-radius: 0px !important;
+}
+
+.gr-box {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 15 33 / var(--tw-bg-opacity)) !important;
+}
+
+.dark .gr-check-radio {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 15 33 / var(--tw-bg-opacity)) !important;
+}
+
+.dark .gr-check-radio:checked {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 15 33 / var(--tw-bg-opacity)) !important;
+}
+
+.dark .gr-check-radio:focus {
+  --tw-ring-opacity: 0;
+  --tw-ring-color: rgb(55 65 81 / var(--tw-ring-opacity)) !important;
+}
+
+.gr-button-primary {
+  --tw-border-opacity: 1;
+  border-color: rgb(245 243 194 / var(--tw-border-opacity));
+  color: rgb(245, 243, 194);
+  background: none;
+  border-radius: 0px;
+  transition: background .1s, color .1s;
+}
+
+.gr-button-primary:hover {
+  background: rgb(245, 243, 194);
+  color: rgb(19, 21, 44);
+}
+
+.dark .gr-button-primary {
+  --tw-border-opacity: 1;
+  border-color: rgb(245 243 194 / var(--tw-border-opacity));
+  color: rgb(245, 243, 194);
+  background: none;
+  border-radius: 0px;
+  transition: background .1s, color .1s;
+}
+
+.dark .gr-button-primary:hover {
+  background: rgb(245, 243, 194);
+  color: rgb(19, 21, 44);
+}
+
+.gr-button-secondary {
+  border: none;
+  background: none;
+  color: rgb(208, 208, 213) !important;
+  transition: color .1s;
+}
+
+.gr-button-secondary:hover {
+  color: rgb(200, 198, 164) !important;
+}
+
+.dark .gr-button-secondary {
+  border: none;
+  background: none;
+  color: rgb(208, 208, 213) !important;
+  transition: color .1s;
+}
+
+.dark .gr-button-secondary:hover {
+  color: rgb(200, 198, 164) !important;
+}
+
+div div .gr-block.gr-box.relative.w-full.overflow-hidden.border-solid.border.border-gray-200.gr-panel {
+  background-color: #13152c !important;
+  border: none !important;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+.gr-panel div.flex-col div.justify-between div{
+  position: absolute;
+  top: -9px;
+  right: 1em;
+  padding: 0px;
+  border: none;
+}
+
+.dark fieldset span.text-gray-500, .dark .gr-block.gr-box span.text-gray-500, .dark label.block span{
+  background: none !important;
+  border: none !important;
+  padding: 0px; 
+}
+
+#txt2img_sampling label{
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+  background: none;
+}
+
+#random_seed, #random_subseed, #reuse_seed, #reuse_subseed, #open_folder{
+  min-width: auto;
+  flex-grow: 0;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  padding-top: 26px;
+}
+
+input[type="number"] {
+  margin-top: 18px; 
+}
+
+#subseed_show label{
+  height: 100%;
+  padding-top: 6px;
+}
+
+.dark .gr-input-label {
+  background: none !important;
+}
+
+select.gr-box.gr-input.w-full.disabled\:cursor-not-allowed {
+  background-color: rgb(19, 21, 44) !important;
+  border-color: rgb(34, 37, 63) !important;
+}    
+
+select.gr-box.gr-input.w-full.disabled\:cursor-not-allowed option {
+  background-color: rgb(19, 21, 44) !important;
+  border: none !important;
+}
+
+#txt2img_gallery {
+  padding-top: 0px !important;
+  margin-top: 20px !important;
+  background-color: rgb(14, 15, 33) !important;
+}
+
+#txt2img_gallery * {
+  background: rgb(14, 15, 33) !important;
+}
+
+#lightboxModal {
+  background-color: rgb(19, 21, 44);
+}
+
+.dark .dark\:bg-gray-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 15 33 / var(--tw-bg-opacity));
+}
+
+#txt2img_progressbar, #img2img_progressbar, #ti_progressbar{
+  position: absolute;
+  z-index: 1000;
+  right: 0;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  display: block;
+}
+
+#txt2img_progress_row, #img2img_progress_row{
+  margin-bottom: 10px;
+}
+
+.progressDiv{
+  width: 100%;
+  height: 20px;
+  background: rgb(14, 15, 33);
+  border-radius: 0px;
+}
+
+.dark .progressDiv{
+  background: rgb(14, 15, 33);
+}
+
+.progressDiv .progress{
+  width: 0%;
+  height: 20px;
+  background: rgb(245, 243, 194);
+  color: rgb(19, 21, 44);
+  font-weight: bold;
+  line-height: 20px;
+  padding: 0 8px 0 0;
+  text-align: right;
+  border-radius: 0px;
+}
+
+#txt2img_interrupt, #img2img_interrupt {
+  border: 1px solid rgb(245 243 194) !important;
+  position: absolute;
+  width: 50%;
+  height: 72px;
+  background: rgb(19, 21, 44);
+  color: rgb(245, 243, 194) !important;
+  border-radius: 0px;
+  transition: background .1s, color .1s;
+}
+
+#txt2img_skip, #img2img_skip {
+  border: 1px solid rgb(245 243 194) !important;
+  position: absolute;
+  width: 50%;
+  right: 0px;
+  height: 72px;
+  background: rgb(19, 21, 44);
+  color: rgb(245, 243, 194) !important;
+  border-radius: 0px;
+  transition: background .1s, color .1s;
+}
+
+#txt2img_interrupt:hover, #img2img_interrupt:hover {
+  background: rgb(245, 243, 194) !important;
+  color: rgb(19, 21, 44) !important;
+}
+
+#txt2img_skip:hover, #img2img_skip:hover {
+  background: rgb(245, 243, 194) !important;
+  color: rgb(19, 21, 44) !important;
+}
+
+input,
+textarea {
+  background: rgb(14, 15, 33);
+  border: 0px none;
+  color: rgb(255, 255, 255);
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 0.875rem;
+  padding: 10px 0px 10px 10px;
+  resize: none;
+  width: 100%;
+  touch-action: pan-y;
+  border-radius: 0px;
+}
+
+.gallery-item {
+  border-radius: 0px !important;
+  --tw-ring-offset-color: none;
+  outline: none !important;
+  --tw-ring-opacity: 0 !important;
+}
