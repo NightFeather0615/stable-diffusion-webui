@@ -1,31 +1,51 @@
 @echo off
 
+set COMMANDLINE_ARGS=
+set PYTHON=
+set GIT=
+set VENV_DIR=
+set useXFormers=null
 set useLowVram=null
+
+:askUseXFormers
+
+set /p useXFormers=Use xformers to increase your it/s (Y/N)?: 
+
+if %useXFormers% == y (
+  set COMMANDLINE_ARGS=%COMMANDLINE_ARGS% --xformers
+  goto :endAskUseXFormers
+) else if %useXFormers% == Y (
+  set COMMANDLINE_ARGS=%COMMANDLINE_ARGS% --xformers
+  goto :endAskUseXFormers
+) else if %useXFormers% == n (
+  goto :endAskUseXFormers
+) else if %useXFormers% == N (
+  goto :endAskUseXFormers
+)
+
+goto :askUseXFormers
+
+:endAskUseXFormers
 
 :askUseLowVram
 
 set /p useLowVram=Use Low VRAM Mode to generate high res. image (Y/N)?: 
 
 if %useLowVram% == y (
-  set COMMANDLINE_ARGS=--lowvram
+  set COMMANDLINE_ARGS=%COMMANDLINE_ARGS% --lowvram
   goto :endAskUseLowVram
 ) else if %useLowVram% == Y (
-  set COMMANDLINE_ARGS=--lowvram
+  set COMMANDLINE_ARGS=%COMMANDLINE_ARGS% --lowvram
   goto :endAskUseLowVram
 ) else if %useLowVram% == n (
-  set COMMANDLINE_ARGS=
   goto :endAskUseLowVram
 ) else if %useLowVram% == N (
-  set COMMANDLINE_ARGS=
   goto :endAskUseLowVram
-) else (
-  goto :askUseLowVram
 )
+
+goto :askUseLowVram
 
 :endAskUseLowVram
 
-set PYTHON=
-set GIT=
-set VENV_DIR=
 
 call webui.bat

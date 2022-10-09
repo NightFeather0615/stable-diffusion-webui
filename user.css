@@ -231,6 +231,16 @@ select.gr-box.gr-input.w-full.disabled\:cursor-not-allowed option {
   background: rgb(14, 15, 33) !important;
 }
 
+#img2img_gallery {
+  padding-top: 0px !important;
+  margin-top: 20px !important;
+  background-color: rgb(14, 15, 33) !important;
+}
+
+#img2img_gallery * {
+  background: rgb(14, 15, 33) !important;
+}
+
 #lightboxModal {
   background-color: rgb(19, 21, 44);
 }
@@ -328,4 +338,8 @@ textarea {
   --tw-ring-offset-color: none;
   outline: none !important;
   --tw-ring-opacity: 0 !important;
+}
+
+img.w-full.h-full.object-contain {
+  background-color: rgb(14, 15, 33) !important;;
 }

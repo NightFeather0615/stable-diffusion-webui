@@ -566,6 +566,7 @@ def create_ui(wrap_gradio_gpu_call):
                 with gr.Row():
                     restore_faces = gr.Checkbox(label='Restore faces', value=False, visible=len(shared.face_restorers) > 1)
                     tiling = gr.Checkbox(label='Tiling', value=False)
+                    add_quality_tags = gr.Checkbox(label='Add Quality Tags', value=True)
 
                 with gr.Row():
                     batch_count = gr.Slider(minimum=1, maximum=cmd_opts.max_batch_count, step=1, label='Batch count', value=1)
@@ -587,9 +588,8 @@ def create_ui(wrap_gradio_gpu_call):
                     img2img_gallery = gr.Gallery(label='Output', show_label=False, elem_id='img2img_gallery').style(grid=4)
 
 
-                with gr.Group():
-                    progressbar = gr.HTML(elem_id="img2img_progressbar")
-                    setup_progressbar(progressbar, img2img_preview, 'img2img')
+                progressbar = gr.HTML(elem_id="img2img_progressbar")
+                setup_progressbar(progressbar, img2img_preview, 'img2img')
 
                 with gr.Group():
                     with gr.Row():
@@ -636,6 +636,7 @@ def create_ui(wrap_gradio_gpu_call):
                     inpainting_fill,
                     restore_faces,
                     tiling,
+                    add_quality_tags,
                     batch_count,
                     batch_size,
                     cfg_scale,
