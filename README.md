@@ -1,5 +1,10 @@
-# Stable Diffusion web UI
-A browser interface based on Gradio library for Stable Diffusion.
+# Stable Diffusion web UI Custom Version for NovelAI
+A browser interface based on Gradio library for Stable Diffusion.  
+
+## Change Content
+* CSS Style
+* Remove features which don't match NovelAI model
+* Add features to match NovelAI's UX  
 
 ![](txt2img_Screenshot.png)
 
