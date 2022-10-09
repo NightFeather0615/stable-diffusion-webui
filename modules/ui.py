@@ -122,13 +122,7 @@ def save_files(js_data, images, index):
         images = [images[index]]
         start_index = index
 
-    with open(os.path.join(opts.outdir_save, "log.csv"), "a", encoding="utf8", newline='') as file:
-        at_start = file.tell() == 0
-        writer = csv.writer(file)
-        if at_start:
-            writer.writerow(["prompt", "seed", "width", "height", "sampler", "cfgs", "steps", "filename", "negative_prompt"])
-
-        for image_index, filedata in enumerate(images, start_index):
+    for image_index, filedata in enumerate(images, start_index):
             if filedata.startswith("data:image/png;base64,"):
                 filedata = filedata[len("data:image/png;base64,"):]
 
@@ -141,8 +135,6 @@ def save_files(js_data, images, index):
 
             filename = os.path.relpath(fullfn, path)
             filenames.append(filename)
-
-        writer.writerow([data["prompt"], data["seed"], data["width"], data["height"], data["sampler"], data["cfg_scale"], data["steps"], filenames[0], data["negative_prompt"]])
 
     return '', '', plaintext_to_html(f"Saved: {filenames[0]}")
 
