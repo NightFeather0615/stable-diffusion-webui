@@ -104,7 +104,7 @@ class FrozenCLIPEmbedderWithCustomWords(torch.nn.Module):
         self.tokenizer = wrapped.tokenizer
         self.token_mults = {}
 
-        tokens_with_parens = [(k, v) for k, v in self.tokenizer.get_vocab().items() if '(' in k or ')' in k or '[' in k or ']' in k]
+        tokens_with_parens = [(k, v) for k, v in self.tokenizer.get_vocab().items() if '(' in k or ')' in k or '[' in k or ']' in k or '{' in k or '}' in k]
         for text, ident in tokens_with_parens:
             mult = 1.0
             for c in text:
@@ -112,9 +112,9 @@ class FrozenCLIPEmbedderWithCustomWords(torch.nn.Module):
                     mult /= 1.1
                 if c == ']':
                     mult *= 1.1
-                if c == '(':
+                if c == '(' or c == '{':
                     mult *= 1.1
-                if c == ')':
+                if c == ')' or c == '}':
                     mult /= 1.1
 
             if mult != 1.0:
